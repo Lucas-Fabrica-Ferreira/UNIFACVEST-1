@@ -95,7 +95,7 @@ nav a:hover {
   font-size: 25px;
 }
 
-main {
+.fale-menu {
   width: 940px;
   margin: 0 auto;
 }
@@ -159,10 +159,21 @@ td {
   margin: 0 auto;
 }
 
-.lista-diferncial {
+.lista-diferencial {
   width: 40%;
   display: inline-block;
   vertical-align: top;
+}
+
+.imagemdiferencial {
+  width: 60%;
+  box-shadow: 10px 10px 10px 0 #000000;
+  margin-bottom: 30px;
+  transition: 400ms;
+}
+
+.imagemdiferencial:hover {
+  opacity: 0.3;
 }
 
 .itens {
@@ -175,10 +186,6 @@ td {
 
 .itens::before {
   content: '\27a4';
-}
-
-.imagemdiferencial {
-  width: 60%;
 }
 
 .video {
@@ -199,4 +206,29 @@ footer {
   background-color: #e8e8e8;
   text-align: center;
   padding: 50px;
+}
+
+@media screen and (max-width: 480px) {
+  .box,
+  .principal,
+  .conteudo-diferencial,
+  .mapa,
+  .video {
+    width: auto;
+  }
+  h1 {
+    text-align: center;
+  }
+  nav {
+    text-align: center;
+    position: static;
+  }
+  nav a {
+    font-size: 18px;
+  }
+  .lista-diferencial,
+  .imagemdiferencial,
+  main {
+    width: 100%;
+  }
 }
